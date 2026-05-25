@@ -12,6 +12,7 @@ window.jQuery = $;
 window.$ = $;
 
 const url = 'https://github.com/sle118/squeezelite-esp32/commit/'
+const supportedPlatforms = ['I2S-4MFlash', 'Muse']
 // Loading bootstrap with optional features
 initBootstrap({
   tooltip: true,
@@ -151,7 +152,7 @@ function setManifests(json){
     try {
       const release=json[platform].find(item => item.bits =='16');
       const manifest_link=`artifacts/${release.manifest}`;
-      if(platform==="I2S-4MFlash"){
+      if (platform === 'I2S-4MFlash'){
         $('#button_web_install')[0].attributes['manifest'].value = manifest_link;
       }
       $(`#card${platform}_header`).attr('manifest',manifest_link);
@@ -167,7 +168,7 @@ fetch('./artifacts/manifest')
   .then((response) => response.json())
   .then((resp) => {
     let platforms = {}
-    resp.forEach((element) => {
+    resp.filter((element) => supportedPlatforms.includes(element.release_details.platform)).forEach((element) => {
       let platform = `${element.release_details.platform}`
       if (!platforms[platform]) {
         platforms[platform] = []
