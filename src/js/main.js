@@ -11,8 +11,8 @@ import $ from 'jquery';
 window.jQuery = $;
 window.$ = $;
 
-const url = 'https://github.com/sle118/squeezelite-esp32/commit/'
-const supportedPlatforms = ['I2S-4MFlash', 'Muse']
+const url = 'https://github.com/PHOL-LABS/unibt_wicer_flasher/commit/'
+const supportedPlatforms = ['UniBT', 'Wicer']
 // Loading bootstrap with optional features
 initBootstrap({
   tooltip: true,
@@ -40,7 +40,7 @@ function getRevisionLine(description) {
  
 }
 function render_firmware_button(target,description,manifest,flash_button){
-
+  console.log("render");
   let button= document.createElement('div')
   button.innerHTML=flash_button?`<div class="d-flex justify-content-between flex-row w-100 ">`:'';
   button.innerHTML+=`<div>${description}</div>`;
@@ -147,24 +147,71 @@ function populateTabs(json){
 
   });
 }
-function setManifests(json){
-  Object.keys(json).forEach(function (platform,index) {
+function setManifests(json) {
+  console.log('setManifests() input:', json);
+
+  Object.keys(json).forEach(function (platform, index) {
+    console.group(`Platform: ${platform}`);
+    console.log('Index:', index);
+    console.log('Platform data:', json[platform]);
+
     try {
-      const release=json[platform].find(item => item.bits =='16');
-      const manifest_link=`artifacts/${release.manifest}`;
-      if (platform === 'I2S-4MFlash'){
-        $('#button_web_install')[0].attributes['manifest'].value = manifest_link;
+      const releases = json[platform];
+
+      if (!Array.isArray(releases)) {
+        console.error('Platform data is not an array:', releases);
+        console.groupEnd();
+        return;
       }
-      $(`#card${platform}_header`).attr('manifest',manifest_link);
+
+      console.log('Available releases:', releases);
+      console.log('Available bits:', releases.map(item => item.bits));
+
+      let release;
+
+      if (platform === 'Wicer' || platform === 'UniBT') {
+        release = releases[0];
+      } else {
+        release = releases.find(item => item.bits == '16');
+      }
+
+      console.log('Selected release with bits == 16:', release);
+
+      if (!release) {
+        console.error(`No release found with bits == 16 for platform ${platform}`);
+        console.groupEnd();
+        return;
+      }
+
+      if (!release.manifest) {
+        console.error('Release exists but has no manifest field:', release);
+        console.groupEnd();
+        return;
+      }
+
+      const manifest_link = `artifacts/${release.manifest}`;
+      console.log('Manifest link:', manifest_link);
+
+      console.log('Setting #button_web_install manifest:', manifest_link);
+      $('#button_web_install').attr('manifest', manifest_link);
+      const cardSelector = `#card${platform}_header`;
+      console.log('Card selector:', cardSelector);
+      console.log('Matched elements:', $(cardSelector).length);
+
+      $(`#card${platform}_header`).attr('manifest', manifest_link);
+
+      console.log('Final card manifest attr:', $(cardSelector).attr('manifest'));
     } catch (error) {
-      console.error(`Unable to set manifest for platform ${platform}: ${error}`);
+      console.error(`Unable to set manifest for platform ${platform}:`, error);
     }
+
+    console.groupEnd();
   });
 }
 
 
 
-fetch('./artifacts/manifest')
+fetch('./artifacts/manifest.json')
   .then((response) => response.json())
   .then((resp) => {
     let platforms = {}
