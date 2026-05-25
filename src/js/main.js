@@ -170,7 +170,7 @@ function setManifests(json) {
       let release;
 
       if (platform === 'Wicer' || platform === 'UniBT') {
-        release = releases[0];
+        release = releases[releases.length - 1];
       } else {
         release = releases.find(item => item.bits == '16');
       }
