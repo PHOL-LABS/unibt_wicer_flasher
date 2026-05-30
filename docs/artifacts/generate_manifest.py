@@ -27,12 +27,54 @@ for version_dir in sorted(RELEASES_DIR.iterdir()):
         firmware_name = bin_file.stem
 
         # create two platform entries
-        for platform in ["Wicer", "UniBT"]:
+        for platform in ["Wicer"]:
 
             entry = {
                 "name": f"{platform}.{version}",
                 "branch": "main",
                 "description": f"WIC64 firmware release {version}",
+                "url": rel_path,
+                "release_details": {
+                    "version": version,
+                    "platform": platform,
+                    "branch": "main"
+                },
+                "bin_files": [
+                    {
+                        "name": bin_file.name,
+                        "offset": "0x0",
+                        "artifact_relpath": rel_path
+                    }
+                ],
+                "manifest_name": f"manifest-{platform}-{version}.json"
+            }
+
+            manifest.append(entry)
+            
+RELEASES_DIR = ARTIFACTS_DIR / "bluepad" / "releases"
+
+for version_dir in sorted(RELEASES_DIR.iterdir()):
+    if not version_dir.is_dir():
+        continue
+
+    version = version_dir.name
+
+    # recursively find all .bin files
+    for bin_file in version_dir.rglob("*.bin"):
+
+        # relative path from docs/artifacts
+        rel_path = bin_file.relative_to(ARTIFACTS_DIR).as_posix()
+
+        # firmware name
+        firmware_name = bin_file.stem
+
+        # create two platform entries
+        for platform in ["UniBT"]:
+
+            entry = {
+                "name": f"{platform}.{version}",
+                "branch": "main",
+                "description": f"UniBT firmware release {version}",
                 "url": rel_path,
                 "release_details": {
                     "version": version,

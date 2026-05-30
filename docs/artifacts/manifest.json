@@ -19,25 +19,6 @@
         "manifest_name": "manifest-Wicer-2.0.0.json"
     },
     {
-        "name": "UniBT.2.0.0",
-        "branch": "main",
-        "description": "WIC64 firmware release 2.0.0",
-        "url": "wic64/releases/2.0.0/wic64-firmware-binaries-2.0.0/wic64-firmware-binaries-2.0.0/bootloader.bin",
-        "release_details": {
-            "version": "2.0.0",
-            "platform": "UniBT",
-            "branch": "main"
-        },
-        "bin_files": [
-            {
-                "name": "bootloader.bin",
-                "offset": "0x0",
-                "artifact_relpath": "wic64/releases/2.0.0/wic64-firmware-binaries-2.0.0/wic64-firmware-binaries-2.0.0/bootloader.bin"
-            }
-        ],
-        "manifest_name": "manifest-UniBT-2.0.0.json"
-    },
-    {
         "name": "Wicer.2.0.0",
         "branch": "main",
         "description": "WIC64 firmware release 2.0.0",
@@ -55,25 +36,6 @@
             }
         ],
         "manifest_name": "manifest-Wicer-2.0.0.json"
-    },
-    {
-        "name": "UniBT.2.0.0",
-        "branch": "main",
-        "description": "WIC64 firmware release 2.0.0",
-        "url": "wic64/releases/2.0.0/wic64-firmware-binaries-2.0.0/wic64-firmware-binaries-2.0.0/ota_data_initial.bin",
-        "release_details": {
-            "version": "2.0.0",
-            "platform": "UniBT",
-            "branch": "main"
-        },
-        "bin_files": [
-            {
-                "name": "ota_data_initial.bin",
-                "offset": "0x0",
-                "artifact_relpath": "wic64/releases/2.0.0/wic64-firmware-binaries-2.0.0/wic64-firmware-binaries-2.0.0/ota_data_initial.bin"
-            }
-        ],
-        "manifest_name": "manifest-UniBT-2.0.0.json"
     },
     {
         "name": "Wicer.2.0.0",
@@ -95,25 +57,6 @@
         "manifest_name": "manifest-Wicer-2.0.0.json"
     },
     {
-        "name": "UniBT.2.0.0",
-        "branch": "main",
-        "description": "WIC64 firmware release 2.0.0",
-        "url": "wic64/releases/2.0.0/wic64-firmware-binaries-2.0.0/wic64-firmware-binaries-2.0.0/partition-table.bin",
-        "release_details": {
-            "version": "2.0.0",
-            "platform": "UniBT",
-            "branch": "main"
-        },
-        "bin_files": [
-            {
-                "name": "partition-table.bin",
-                "offset": "0x0",
-                "artifact_relpath": "wic64/releases/2.0.0/wic64-firmware-binaries-2.0.0/wic64-firmware-binaries-2.0.0/partition-table.bin"
-            }
-        ],
-        "manifest_name": "manifest-UniBT-2.0.0.json"
-    },
-    {
         "name": "Wicer.2.0.0",
         "branch": "main",
         "description": "WIC64 firmware release 2.0.0",
@@ -133,25 +76,6 @@
         "manifest_name": "manifest-Wicer-2.0.0.json"
     },
     {
-        "name": "UniBT.2.0.0",
-        "branch": "main",
-        "description": "WIC64 firmware release 2.0.0",
-        "url": "wic64/releases/2.0.0/wic64-firmware-binaries-2.0.0/wic64-firmware-binaries-2.0.0/wic64.bin",
-        "release_details": {
-            "version": "2.0.0",
-            "platform": "UniBT",
-            "branch": "main"
-        },
-        "bin_files": [
-            {
-                "name": "wic64.bin",
-                "offset": "0x0",
-                "artifact_relpath": "wic64/releases/2.0.0/wic64-firmware-binaries-2.0.0/wic64-firmware-binaries-2.0.0/wic64.bin"
-            }
-        ],
-        "manifest_name": "manifest-UniBT-2.0.0.json"
-    },
-    {
         "name": "Wicer.2.0.1",
         "branch": "main",
         "description": "WIC64 firmware release 2.0.1",
@@ -169,25 +93,6 @@
             }
         ],
         "manifest_name": "manifest-Wicer-2.0.1.json"
-    },
-    {
-        "name": "UniBT.2.0.1",
-        "branch": "main",
-        "description": "WIC64 firmware release 2.0.1",
-        "url": "wic64/releases/2.0.1/wic64-firmware-binaries-2.0.1/wic64-firmware-binaries-2.0.1/bootloader.bin",
-        "release_details": {
-            "version": "2.0.1",
-            "platform": "UniBT",
-            "branch": "main"
-        },
-        "bin_files": [
-            {
-                "name": "bootloader.bin",
-                "offset": "0x0",
-                "artifact_relpath": "wic64/releases/2.0.1/wic64-firmware-binaries-2.0.1/wic64-firmware-binaries-2.0.1/bootloader.bin"
-            }
-        ],
-        "manifest_name": "manifest-UniBT-2.0.1.json"
     },
     {
         "name": "Wicer.2.0.1",
@@ -209,25 +114,6 @@
         "manifest_name": "manifest-Wicer-2.0.1.json"
     },
     {
-        "name": "UniBT.2.0.1",
-        "branch": "main",
-        "description": "WIC64 firmware release 2.0.1",
-        "url": "wic64/releases/2.0.1/wic64-firmware-binaries-2.0.1/wic64-firmware-binaries-2.0.1/ota_data_initial.bin",
-        "release_details": {
-            "version": "2.0.1",
-            "platform": "UniBT",
-            "branch": "main"
-        },
-        "bin_files": [
-            {
-                "name": "ota_data_initial.bin",
-                "offset": "0x0",
-                "artifact_relpath": "wic64/releases/2.0.1/wic64-firmware-binaries-2.0.1/wic64-firmware-binaries-2.0.1/ota_data_initial.bin"
-            }
-        ],
-        "manifest_name": "manifest-UniBT-2.0.1.json"
-    },
-    {
         "name": "Wicer.2.0.1",
         "branch": "main",
         "description": "WIC64 firmware release 2.0.1",
@@ -245,25 +131,6 @@
             }
         ],
         "manifest_name": "manifest-Wicer-2.0.1.json"
-    },
-    {
-        "name": "UniBT.2.0.1",
-        "branch": "main",
-        "description": "WIC64 firmware release 2.0.1",
-        "url": "wic64/releases/2.0.1/wic64-firmware-binaries-2.0.1/wic64-firmware-binaries-2.0.1/partition-table.bin",
-        "release_details": {
-            "version": "2.0.1",
-            "platform": "UniBT",
-            "branch": "main"
-        },
-        "bin_files": [
-            {
-                "name": "partition-table.bin",
-                "offset": "0x0",
-                "artifact_relpath": "wic64/releases/2.0.1/wic64-firmware-binaries-2.0.1/wic64-firmware-binaries-2.0.1/partition-table.bin"
-            }
-        ],
-        "manifest_name": "manifest-UniBT-2.0.1.json"
     },
     {
         "name": "Wicer.2.0.1",
@@ -285,25 +152,6 @@
         "manifest_name": "manifest-Wicer-2.0.1.json"
     },
     {
-        "name": "UniBT.2.0.1",
-        "branch": "main",
-        "description": "WIC64 firmware release 2.0.1",
-        "url": "wic64/releases/2.0.1/wic64-firmware-binaries-2.0.1/wic64-firmware-binaries-2.0.1/wic64.bin",
-        "release_details": {
-            "version": "2.0.1",
-            "platform": "UniBT",
-            "branch": "main"
-        },
-        "bin_files": [
-            {
-                "name": "wic64.bin",
-                "offset": "0x0",
-                "artifact_relpath": "wic64/releases/2.0.1/wic64-firmware-binaries-2.0.1/wic64-firmware-binaries-2.0.1/wic64.bin"
-            }
-        ],
-        "manifest_name": "manifest-UniBT-2.0.1.json"
-    },
-    {
         "name": "Wicer.2.1.0",
         "branch": "main",
         "description": "WIC64 firmware release 2.1.0",
@@ -321,25 +169,6 @@
             }
         ],
         "manifest_name": "manifest-Wicer-2.1.0.json"
-    },
-    {
-        "name": "UniBT.2.1.0",
-        "branch": "main",
-        "description": "WIC64 firmware release 2.1.0",
-        "url": "wic64/releases/2.1.0/wic64-firmware-binaries-2.1.0/wic64-firmware-binaries-2.1.0/bootloader.bin",
-        "release_details": {
-            "version": "2.1.0",
-            "platform": "UniBT",
-            "branch": "main"
-        },
-        "bin_files": [
-            {
-                "name": "bootloader.bin",
-                "offset": "0x0",
-                "artifact_relpath": "wic64/releases/2.1.0/wic64-firmware-binaries-2.1.0/wic64-firmware-binaries-2.1.0/bootloader.bin"
-            }
-        ],
-        "manifest_name": "manifest-UniBT-2.1.0.json"
     },
     {
         "name": "Wicer.2.1.0",
@@ -361,25 +190,6 @@
         "manifest_name": "manifest-Wicer-2.1.0.json"
     },
     {
-        "name": "UniBT.2.1.0",
-        "branch": "main",
-        "description": "WIC64 firmware release 2.1.0",
-        "url": "wic64/releases/2.1.0/wic64-firmware-binaries-2.1.0/wic64-firmware-binaries-2.1.0/ota_data_initial.bin",
-        "release_details": {
-            "version": "2.1.0",
-            "platform": "UniBT",
-            "branch": "main"
-        },
-        "bin_files": [
-            {
-                "name": "ota_data_initial.bin",
-                "offset": "0x0",
-                "artifact_relpath": "wic64/releases/2.1.0/wic64-firmware-binaries-2.1.0/wic64-firmware-binaries-2.1.0/ota_data_initial.bin"
-            }
-        ],
-        "manifest_name": "manifest-UniBT-2.1.0.json"
-    },
-    {
         "name": "Wicer.2.1.0",
         "branch": "main",
         "description": "WIC64 firmware release 2.1.0",
@@ -397,25 +207,6 @@
             }
         ],
         "manifest_name": "manifest-Wicer-2.1.0.json"
-    },
-    {
-        "name": "UniBT.2.1.0",
-        "branch": "main",
-        "description": "WIC64 firmware release 2.1.0",
-        "url": "wic64/releases/2.1.0/wic64-firmware-binaries-2.1.0/wic64-firmware-binaries-2.1.0/partition-table.bin",
-        "release_details": {
-            "version": "2.1.0",
-            "platform": "UniBT",
-            "branch": "main"
-        },
-        "bin_files": [
-            {
-                "name": "partition-table.bin",
-                "offset": "0x0",
-                "artifact_relpath": "wic64/releases/2.1.0/wic64-firmware-binaries-2.1.0/wic64-firmware-binaries-2.1.0/partition-table.bin"
-            }
-        ],
-        "manifest_name": "manifest-UniBT-2.1.0.json"
     },
     {
         "name": "Wicer.2.1.0",
@@ -437,22 +228,60 @@
         "manifest_name": "manifest-Wicer-2.1.0.json"
     },
     {
-        "name": "UniBT.2.1.0",
+        "name": "UniBT.4.0",
         "branch": "main",
-        "description": "WIC64 firmware release 2.1.0",
-        "url": "wic64/releases/2.1.0/wic64-firmware-binaries-2.1.0/wic64-firmware-binaries-2.1.0/wic64.bin",
+        "description": "UniBT firmware release 4.0",
+        "url": "bluepad/releases/4.0/bluepad32-unijoysticle-v4.0/bluepad32-unijoysticle-v4.0/bluepad32-unijoysticle-full-v4.0.bin",
         "release_details": {
-            "version": "2.1.0",
+            "version": "4.0",
             "platform": "UniBT",
             "branch": "main"
         },
         "bin_files": [
             {
-                "name": "wic64.bin",
+                "name": "bluepad32-unijoysticle-full-v4.0.bin",
                 "offset": "0x0",
-                "artifact_relpath": "wic64/releases/2.1.0/wic64-firmware-binaries-2.1.0/wic64-firmware-binaries-2.1.0/wic64.bin"
+                "artifact_relpath": "bluepad/releases/4.0/bluepad32-unijoysticle-v4.0/bluepad32-unijoysticle-v4.0/bluepad32-unijoysticle-full-v4.0.bin"
             }
         ],
-        "manifest_name": "manifest-UniBT-2.1.0.json"
+        "manifest_name": "manifest-UniBT-4.0.json"
+    },
+    {
+        "name": "UniBT.4.1.0",
+        "branch": "main",
+        "description": "UniBT firmware release 4.1.0",
+        "url": "bluepad/releases/4.1.0/bluepad32-unijoysticle-v4.1.0/bluepad32-unijoysticle-v4.1.0/bluepad32-unijoysticle-full-v4.1.0.bin",
+        "release_details": {
+            "version": "4.1.0",
+            "platform": "UniBT",
+            "branch": "main"
+        },
+        "bin_files": [
+            {
+                "name": "bluepad32-unijoysticle-full-v4.1.0.bin",
+                "offset": "0x0",
+                "artifact_relpath": "bluepad/releases/4.1.0/bluepad32-unijoysticle-v4.1.0/bluepad32-unijoysticle-v4.1.0/bluepad32-unijoysticle-full-v4.1.0.bin"
+            }
+        ],
+        "manifest_name": "manifest-UniBT-4.1.0.json"
+    },
+    {
+        "name": "UniBT.4.2.0",
+        "branch": "main",
+        "description": "UniBT firmware release 4.2.0",
+        "url": "bluepad/releases/4.2.0/bluepad32-unijoysticle-v4.2.0/bluepad32-unijoysticle-v4.2.0/bluepad32-unijoysticle-full-v4.2.0.bin",
+        "release_details": {
+            "version": "4.2.0",
+            "platform": "UniBT",
+            "branch": "main"
+        },
+        "bin_files": [
+            {
+                "name": "bluepad32-unijoysticle-full-v4.2.0.bin",
+                "offset": "0x0",
+                "artifact_relpath": "bluepad/releases/4.2.0/bluepad32-unijoysticle-v4.2.0/bluepad32-unijoysticle-v4.2.0/bluepad32-unijoysticle-full-v4.2.0.bin"
+            }
+        ],
+        "manifest_name": "manifest-UniBT-4.2.0.json"
     }
 ]
